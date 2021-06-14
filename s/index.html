@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+	<style>
+		.drums{
+			display: flex;
+		}
+		body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drum{
+	height: calc(var(--width) * 4);
+  width: calc(var(--width)*1.5);
+  --width: 20px;
+  background-color: white;
+  border: 1px solid #333;
+}
+</style>
+  <body>
+		<div class="drums">
+			<div data-note="kick" class="drum key white"></div>
+			<div data-note="snare" class="drum key white"></div>
+			<div data-note="snare-loud" class="drum key white"></div>
+			<div data-note="low-tom" class="drum key white"></div>
+			<div data-note="mid-tom" class="drum key white"></div>
+			<div data-note="high-tom" class="drum key white"></div>
+			<div data-note="hihat1" class="drum key white"></div>
+			<div data-note="hihat2" class="drum key white"></div>
+			<div data-note="hihat3" class="drum key white"></div>
+		</div>
+		<audio id="kick" src="sound/kick.mp3"></audio>
+		<audio id="snare" src="sound/snare.mp3"></audio>
+		<audio id="snare-loud" src="sound/snare-loud.mp3"></audio>
+		<audio id="low-tom" src="sound/low-tom.mp3"></audio>
+		<audio id="mid-tom" src="sound/mid-tom.mp3"></audio>
+		<audio id="high-tom" src="sound/high-tom.mp3"></audio>
+		<audio id="hihat1" src="sound/hihat1.mp3"></audio>
+		<audio id="hihat2" src="sound/hihat2.mp3"></audio>
+		<audio id="hihat3" src="sound/hihat3.mp3"></audio>
+<script src="script.js"></script>
+  </body>
+</html>
