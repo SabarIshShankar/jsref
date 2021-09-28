@@ -1,16 +1,17 @@
 <html>
   <head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <title>type</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 	<link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="style.css" />
-
-
-  </head>
-  <style>html, p, textarea{font-family: Inter}
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head> 
+<style>
+html, p, textarea{
+	font-family: Inter
+}
 	.nice, #nice{
 		width: 150px;
 		background-color: red;
@@ -31,39 +32,23 @@
 	.nice:hover {
 		background-color: black;
 		color: white;
-
 	}
 	.bold {
     font-weight: bold;
-}
-	</style>
-  
+    }
+</style>
 <body style="text-align: center;">
-	<div id="container">
-		
-		<p> Word Count:
+<div id="container">
+	<p> Word Count:
         <span id="show">0</span>
     </p>
-		<button class="nice" onclick="copyfunc()">Copy text</button>
-		<a href="#" class="embolden">Bold</a>
-
-		<textarea contenteditable="true" class="textEditor" id="area" oninput="countWord()"  rows="10" cols="50">Hey</textarea>
-
-  </div>
-
-  
-    
-
-    <br><br>
-  
-    
-  
-    <script src="script.js">
-		
-
-				
-    </script >
-		<script>
+	<button class="nice" onclick="copyfunc()">Copy text</button>
+	<a href="#" class="embolden">Bold</a>
+	<textarea contenteditable="true" class="textEditor" id="area" oninput="countWord()"  rows="10" cols="50">Hey</textarea>
+</div>
+<br><br>
+<script src="script.js"></script >
+<script>
 		jQuery(function($) {
   $('.embolden').click(function() {
     var highlight = window.getSelection();
@@ -72,8 +57,6 @@
     $('.textEditor').html(text.replace(highlight, span));
   });
 });
-
-		</script>
+</script>
 </body>
-  
 </html>
