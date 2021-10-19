@@ -44,3 +44,57 @@ console.log(newText);
 let sstr = 'abcdefghijklmnopqrstuvwxyz';
 sstr.lastIndexOf('x');
 console.log(sstr);
+
+//Number()
+let x = new Date("2017-09-30");
+y = Number(x)
+console.log(y)
+
+console.log(Number(12.21))
+
+//parseInt()
+
+u = parseInt("-12")
+parseInt("years10")
+
+console.log(u)
+
+//parseFloat()
+
+j = parseFloat("10 years")
+console.log(j);
+
+x = 1/0;
+console.log(x)
+
+//Arrays
+
+const abc = [];
+abc[1] = "a"
+abc[2] = "b"
+abc[3] = "c"
+
+console.log(abc)
+console.log(abc[0]);
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:46
+}
+
+console.log(person.lastName);
+
+const fruits = ["1", "2", "3", "4"]
+console.log(fruits.length)
+
+
+let fLen = fruits.length;
+
+text = "<ul>";
+for(let i = 0; i < fLen; i++){
+  text += "<li>"+fruits[i]+"</li>"
+}
+text += "</ul>"
+
+console.log(text)
